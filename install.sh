@@ -14,7 +14,7 @@ echo "Enhancing JS syntax..."
 git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
 
 echo "Getting Luna theme..."
-git clone https://github.com/notpratheek/vim-luna.git ~/.vim && mkdir ~/.vim/colors && mv ~/.vim/vim-luna/colors/luna-term.vim ~/.vim/colors
+git clone https://github.com/notpratheek/vim-luna.git ~/.vim && mkdir -p ~/.vim/colors && mv ~/.vim/vim-luna/colors/luna-term.vim ~/.vim/colors
 
 echo "Installing Airline..."
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
@@ -34,6 +34,6 @@ vim -u NONE -c "helptags ~/.vim/bundle/fugitive/doc" -c q
 echo "Configuring vim..."
 mv ./.vimrc ~/
 
-vim .
+vim ./testfile.txt
 
 
