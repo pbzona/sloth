@@ -7,9 +7,16 @@ I like them to have.
 
 ## Installation
 
-One-liner:
+One-line install:
 
--   git clone https://github.com/pbzona/lazy-vim.git && cd lazy-vim && sudo bash install.sh
+`git clone https://github.com/pbzona/lazy-vim.git && cd lazy-vim && sudo bash install.sh`
+
+I also include the helptags for some of the more complicated ones, so you can
+access their manuals right away:
+
+- `:help airline`
+- `:help nerdtree`
+- `:help fugitive`
 
 ## Credits  
 
