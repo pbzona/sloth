@@ -27,6 +27,7 @@ the people that make vim worth using. Included in my preferred configuration:
 - [Pathogen](https://github.com/tpope/vim-pathogen)
 - [Enhanced JS syntax](https://github.com/pangloss/vim-javascript)
 - [Luna colorscheme](https://github.com/notpratheek/vim-luna)
+- [Mustache/Handlebars Mode](https://github.com/mustache/vim-mustache-handlebars)
 - [Airline](https://github.com/vim-airline/vim-airline)
 - [Airline themes](https://github.com/vim-airline/vim-airline-themes)
 - [NERDtree](https://github.com/scrooloose/nerdtree)
