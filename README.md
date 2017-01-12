@@ -1,10 +1,13 @@
 # Sloth
 
 I don't always use vim...but when I do, I'm too lazy to install plugins to make
-it half-decent to work with. This is a script to make things way easier to use.
-No extra features, just an easy way to get the plugins I like and the settings
-I like them to have.
+it half-decent to work with. This laziness has permeated my life, and Sloth is
+the answer I came up with.
 
+Sloth isn't for everyone. In fact, it's not for anyone (except me). It's a script to
+install and configure the things I like to have on my servers without looking
+anything up or having to remember my favorite settings.
+ 
 ## Installation
 
 One-line install for everything:
