@@ -39,9 +39,7 @@ git clone git://github.com/tpope/vim-fugitive.git ~/.vim/bundle/fugitive
 vim -u NONE -c "helptags ~/.vim/bundle/fugitive/doc" -c q
 
 echo "Configuring vim..."
-mv ./.vimrc ~/
-
-touch ./testfile.txt
+curl -LSso https://raw.githubusercontent.com/pbzona/lazy-vim/master/.vimrc ~/.vimrc
 echo "Welcome to your new vim!" > ./testfile.txt
 vim ./testfile.txt
 
