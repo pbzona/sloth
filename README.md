@@ -12,8 +12,7 @@ One-line install for everything:
 `git clone https://github.com/pbzona/sloth.git ~/lazy-vim && cd sloth && sudo
 bash sloth.sh`
 
-This installs everything for the user you run it as. If you want a nicer editor
-when you have to use `sudo vim`, run `vim.sh` as root. The `sloth.sh` script
+This installs everything for the user you run it as. The `sloth.sh` script
 installs everything I normally use. Separate shell scripts are included for
 individual components, in case you don't want everything at once.
 
