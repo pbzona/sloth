@@ -7,11 +7,17 @@ I like them to have.
 
 ## Installation
 
-One-line install:
+One-line install for everything:
 
-`git clone https://github.com/pbzona/sloth.git ~/lazy-vim && cd sloth && sudo bash install.sh`
+`git clone https://github.com/pbzona/sloth.git ~/lazy-vim && cd sloth && sudo
+bash sloth.sh`
 
-I also include the helptags for some of the more complicated plugins, so you can
+This installs everything for the user you run it as. If you want a nicer editor
+when you have to use `sudo vim`, run `vim.sh` as root. The `sloth.sh` script
+installs everything I normally use. Separate shell scripts are included for
+individual components, in case you don't want everything at once.
+
+I also include the helptags for some of the more complicated vim plugins, so you can
 access their manuals right away:
 
 - `:help airline`
@@ -37,13 +43,6 @@ the people that make vim worth using. Included in my preferred configuration:
 - [Airline themes](https://github.com/vim-airline/vim-airline-themes)
 - [NERDtree](https://github.com/scrooloose/nerdtree)
 - [Fugitive](https://github.com/tpope/vim-fugitive)
-
-## Super Lazy Mode
-
-Added a script `node.sh` to install NodeJS v6.x so I don't have to look up the
-URL every time on a new server. This is excluded from `install.sh` because
-maybe I won't want Node every time, but it's still easier than doing it
-manually. Thanks for not judging.
 
 ## Todo
 
