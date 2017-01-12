@@ -17,8 +17,8 @@ echo "Getting Luna theme..."
 git clone https://github.com/notpratheek/vim-luna.git ~/.vim/vim-luna && mv ~/.vim/vim-luna/colors/luna-term.vim ~/.vim/colors
 
 echo "Installing Airline..."
-git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
-vim -u NONE -c "Helptags" -c q
+git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/airline
+vim -u NONE -c "helptags ~/.vim/bundle/airline/doc" -c q
 
 echo "...and its themes..."
 git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
