@@ -18,7 +18,7 @@ git clone https://github.com/notpratheek/vim-luna.git ~/.vim/vim-luna && mv ~/.v
 
 echo "Installing Airline..."
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
-vim -u NONE -c "helptags" -c q
+vim -u NONE -c "Helptags" -c q
 
 echo "...and its themes..."
 git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
