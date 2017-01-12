@@ -1,9 +1,16 @@
 #!/bin/bash
 
+#Positions user in the install file to 
+cd ~/lazy-vim
+
 apt-get update && apt-get -y upgrade
 
 echo "Installing vim and git packages..."
 apt-get -y install vim 
+
+echo "Cleaning out old files..."
+git pull origin
+rm -rf ~/.vim*
 
 echo "Installing vim plugins..."
 
