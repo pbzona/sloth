@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Positions user in the install file to 
-cd ~/lazy-vim
+cd ~/sloth
 
 echo "Updating packages..."
 apt-get update && apt-get -y upgrade
@@ -43,7 +43,7 @@ git clone git://github.com/tpope/vim-fugitive.git ~/.vim/bundle/fugitive
 vim -u NONE -c "helptags ~/.vim/bundle/fugitive/doc" -c q
 
 echo "Setting you up for success..."
-curl -LSso ~/.vimrc https://raw.githubusercontent.com/pbzona/lazy-vim/master/.vimrc
+curl -LSso ~/.vimrc https://raw.githubusercontent.com/pbzona/sloth/master/.vimrc
 echo "Welcome to your new vim!" > ./testfile.txt
 vim ./testfile.txt
 
