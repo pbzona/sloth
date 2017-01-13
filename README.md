@@ -56,3 +56,4 @@ future versions:
 - Statusline font support for entirely new workstations
 - Add public keys and lock down SSH settings
 - Automatic firewall
+- Logic for plugin installations to save bandwidth
