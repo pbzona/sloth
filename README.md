@@ -45,6 +45,7 @@ the people that make vim worth using. Included in my preferred configuration:
 - [Airline themes](https://github.com/vim-airline/vim-airline-themes)
 - [NERDtree](https://github.com/scrooloose/nerdtree)
 - [Fugitive](https://github.com/tpope/vim-fugitive)
+- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ## Todo
 
@@ -52,7 +53,6 @@ The plan is to go beyond vim and just make this a single, complete script to giv
 ideal working environment without having to look things up. To be included in
 future versions:
 
-- Zsh and .zshrc
 - Statusline font support for entirely new workstations
 - Add public keys and lock down SSH settings
 - Automatic firewall

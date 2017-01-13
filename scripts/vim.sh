@@ -3,12 +3,9 @@
 # Positions user in the install file to make sure things get installed correctly
 cd ~/sloth
 
-# Good old fashioned upgrade to get things started
-echo "Updating packages..."
-apt-get update && apt-get -y upgrade
-
 # Just making sure vim is already installed, and same for git in case I host
-# this elsewhere and curl it instead of cloning
+# this elsewhere or someone wants to grab an old tar.gz version to install
+# manually
 echo "Checking for vim and git packages..."
 apt-get -y install vim git
 
@@ -16,7 +13,6 @@ apt-get -y install vim git
 # gets added to my bundle
 echo "Cleaning out old files..."
 git pull origin
-rm -rf ~/.vim*
 
 echo "Installing vim plugins..."
 
@@ -60,7 +56,11 @@ vim -u NONE -c "helptags ~/.vim/bundle/fugitive/doc" -c q
 # Copies the .vimrc rather than moving it for easier testing, and opens up the
 # new vim with a pleasant message :)
 echo "Setting you up for success..."
-cp ~/sloth/.vimrc ~/.vimrc
+if [ -e "../../.vimrc" ] && [ -s "../../.vimrc"]; then
+    mv ~/.vimrc ~/.vimrc.backup
+    echo "Old .vimrc saved at ~/.vimrc.backup"
+fi
+cp ~/sloth/config.vimrc ~/.vimrc
 echo "Welcome to your new vim!" > ./testfile.txt
 vim ./testfile.txt
 
