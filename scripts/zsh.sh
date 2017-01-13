@@ -9,9 +9,11 @@ echo "Pick a shell, any shell..."
 apt-get install curl zsh
 chsh -s $(which zsh)
 
-# Gets install script for Oh My Zsh and runs it
-echo "Oh My Zsh!!!"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Gets install script for Oh My Zsh and runs it if not already installed
+if [ -e "../../.oh-my-zsh" ] && [ -s "../../.oh-my-zsh" ]; then 
+    echo "Oh My Zsh!!!"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
 
 # Copies the local .zshrc to to user's home dir so it can be loaded
 # Comment this line out if you want a base installation of zsh because mine
