@@ -60,7 +60,7 @@ if [ -e "../../.vimrc" ] && [ -s "../../.vimrc"]; then
     mv ~/.vimrc ~/.vimrc.backup
     echo "Old .vimrc saved at ~/.vimrc.backup"
 fi
-cp ~/sloth/config.vimrc ~/.vimrc
+cp ~/sloth/config/vimrc ~/.vimrc
 echo "Welcome to your new vim!" > ./testfile.txt
 vim ./testfile.txt
 
