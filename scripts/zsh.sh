@@ -7,7 +7,7 @@ cd ~/sloth
 # systems are weird like that)
 echo "Pick a shell, any shell..."
 apt-get install curl zsh
-chsh $(which zsh)
+chsh -s $(which zsh)
 
 # Gets install script for Oh My Zsh and runs it
 echo "Oh My Zsh!!!"
