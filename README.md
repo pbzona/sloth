@@ -12,7 +12,7 @@ anything up or having to remember my favorite settings.
 
 One-line install for everything:
 
-`git clone https://github.com/pbzona/sloth.git ~/lazy-vim && cd sloth && sudo
+`git clone https://github.com/pbzona/sloth.git ~/sloth && cd sloth && sudo
 bash sloth.sh`
 
 This installs everything for the user you run it as. The `sloth.sh` script
