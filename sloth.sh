@@ -10,6 +10,3 @@ bash ./scripts/vim.sh
 
 # Installs and configures NodeJS v6.x
 bash ./scripts/node.sh
-
-# Installs and configures zsh
-bash ./scripts/zsh.sh
