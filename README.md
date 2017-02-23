@@ -31,6 +31,16 @@ access their manuals right away:
 Compatible with Debian-based Linux systems only, because who would
 use anything else?
 
+## Tmux Settings
+
+If you don't want to check the config file to see my custom keybindings, here are some basic
+ones:
+
+- prefix: `ctrl + a`
+- split window: `prefix + -` or `prefix + |`
+- switch panes: `alt + <arrow key>`
+- switch windows: `prefix + p/n` (previous/next)
+
 ## Credits  
 
 Shoutout to developers of the included plugins and themes. It took me four
@@ -45,7 +55,8 @@ the people that make vim worth using. Included in my preferred configuration:
 - [Airline themes](https://github.com/vim-airline/vim-airline-themes)
 - [NERDtree](https://github.com/scrooloose/nerdtree)
 - [Fugitive](https://github.com/tpope/vim-fugitive)
-- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+- [Tmux Sensible](https://github.com/tmux-plugins/tmux-sensible)
 
 ## Todo
 
