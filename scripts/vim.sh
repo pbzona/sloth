@@ -9,7 +9,7 @@ cd ~/sloth
 echo "Checking for vim and git packages..."
 apt-get -y install vim git
 
-# Does a git pull so that this script can be done a vim updater as new stuff
+# Does a git pull so that this script can be done as a vim updater as new stuff
 # gets added to my bundle
 echo "Cleaning out old files..."
 git pull origin
@@ -61,7 +61,3 @@ if [ -e "../../.vimrc" ] && [ -s "../../.vimrc"]; then
     echo "Old .vimrc saved at ~/.vimrc.backup"
 fi
 cp ~/sloth/config/.vimrc ~/.vimrc
-echo "Welcome to your new vim!" > ./testfile.txt
-vim ./testfile.txt
-
-
