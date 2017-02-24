@@ -27,6 +27,9 @@ set expandtab
 set smarttab
 set noshiftround
 
+" Overrides terminal color terminal settings, just in case
+set t_Co=256
+
 " Set colorscheme
 syntax enable
 colorscheme luna-term
