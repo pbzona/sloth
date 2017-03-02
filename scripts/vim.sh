@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Positions user in the install file to make sure things get installed correctly
-cd ~/sloth
-
 # Just making sure vim is already installed, and same for git in case I host
 # this elsewhere or someone wants to grab an old tar.gz version to install
 # manually
