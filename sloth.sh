@@ -11,7 +11,7 @@ sudo bash ./scripts/motd.sh
 # Installs and configures vim
 sudo bash ./scripts/vim.sh
 
-# Installs and configures NodeJS v6.x
+# Installs and configures Node 8 (LTS)
 sudo bash ./scripts/node.sh
 
 # Installs and configures tmux

@@ -7,7 +7,7 @@ the answer I came up with.
 Sloth isn't for everyone. In fact, it's not for anyone (except me). It's a script to
 install and configure the things I like to have on my servers without looking
 anything up or having to remember my favorite settings.
- 
+
 ## Installation
 
 One-line install for everything:
@@ -39,9 +39,10 @@ ones:
 - prefix: `ctrl + a`
 - split window: `prefix + -` or `prefix + |`
 - switch panes: `alt + <arrow key>`
+- create a new window: `prefix + c`
 - switch windows: `prefix + p/n` (previous/next)
 
-## Credits  
+## Credits
 
 Shoutout to developers of the included plugins and themes. It took me four
 tries to get my bash script working properly, so I have a ton of respect for
