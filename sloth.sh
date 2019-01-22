@@ -16,5 +16,3 @@ sudo bash ./scripts/node.sh
 
 # Installs and configures tmux
 sudo bash ./scripts/tmux.sh
-
-tmux
