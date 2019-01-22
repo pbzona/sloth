@@ -7,6 +7,9 @@
 " NERDtree https://github.com/scrooloose/nerdtree
 " Fugitive https://github.com/tpope/vim-fugitive
 
+" Set runtime path manipulation - vim plugin Pathogen
+execute pathogen#infect()
+
 " Security
 set modelines=0
 
@@ -16,8 +19,12 @@ set number
 " Encoding
 set encoding=utf-8
 
-" Set runtime path manipulation - vim plugin Pathogen
-execute pathogen#infect()
+" Misc settings
+set hidden
+set visualbell
+set nobackup
+set noswapfile
+set noshowmode
 
 " Whitespace
 set wrap
@@ -30,6 +37,13 @@ set expandtab
 set smarttab
 set noshiftround
 
+" Show invisibles (tabs & trailing spaces) & their highlight color
+set list listchars=tab:»\ ,trail:·
+
+" Configure spell checking
+nmap <silent> <leader>p :set spell!<CR>
+set spelllang=en_us
+
 " Overrides terminal color terminal settings, just in case
 set t_Co=256
 
@@ -37,6 +51,19 @@ set t_Co=256
 filetype plugin indent on
 syntax enable
 colorscheme luna-term
+
+" Strip whitespace on save - shoutout https://github.com/keiththomps
+fun! <SID>StripTrailingWhitespaces()
+    " save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfun
 
 " Set Airline theme
 let g:airline_theme='powerlineish'
