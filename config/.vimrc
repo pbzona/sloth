@@ -16,6 +16,9 @@ set number
 " Encoding
 set encoding=utf-8
 
+" Set runtime path manipulation - vim plugin Pathogen
+execute pathogen#infect()
+
 " Whitespace
 set wrap
 set textwidth=79
@@ -31,11 +34,9 @@ set noshiftround
 set t_Co=256
 
 " Set colorscheme
+filetype plugin indent on
 syntax enable
 colorscheme luna-term
-
-" Set runtime path manipulation - vim plugin Pathogen
-execute pathogen#infect()
 
 " Set Airline theme
 let g:airline_theme='powerlineish'

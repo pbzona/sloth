@@ -50,6 +50,11 @@ echo "Capturing Fugitive..."
 git clone git://github.com/tpope/vim-fugitive.git ~/.vim/bundle/fugitive
 vim -u NONE -c "helptags ~/.vim/bundle/fugitive/doc" -c q
 
+# delimitMate, a bracket handler 
+echo "D'limiting, mate..."
+git clone https://github.com/Raimondi/delimitMate.git ~/.vim/bundle/delimitMate
+vim -u NONE -c "helptags ~/.vim/bundle/delimitMate/doc" -c q
+
 # Copies the .vimrc rather than moving it for easier testing, and opens up the
 # new vim with a pleasant message :)
 echo "Setting you up for success..."
