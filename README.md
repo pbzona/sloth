@@ -56,6 +56,7 @@ the people that make vim worth using. Included in my preferred configuration:
 - [Airline themes](https://github.com/vim-airline/vim-airline-themes)
 - [NERDtree](https://github.com/scrooloose/nerdtree)
 - [Fugitive](https://github.com/tpope/vim-fugitive)
+- [delimitMate](https://github.com/Raimondi/delimitMate)
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 - [Tmux Sensible](https://github.com/tmux-plugins/tmux-sensible)
 
